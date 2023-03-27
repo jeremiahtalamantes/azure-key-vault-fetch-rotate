@@ -1,0 +1,8 @@
+#
+# This will run at midnight every 90 days
+#
+# NOTE: ensure the proper path to the 'usage.php' file 
+#       which will carry out the secret rotation process
+#
+
+0 0 */90 * * /usr/bin/php /path/to/your/project/usage.php >/dev/null 2>&1
